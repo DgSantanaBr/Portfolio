@@ -1,0 +1,458 @@
+:root {
+
+    --white: #fff;
+    --gray-100: #e1e1e6;
+    --gray-300: #c4c4cc;
+    --gray-400: #8d8d99;
+    --gray-600: #323238;
+    --gray-700: #29292e;
+    --gray-800: #202024;
+    --gray-900: #121214;
+
+    --gray-button-200: #555555;
+
+    --blue-300: #5271FF;
+    --blue-500: #2a51ff;
+
+
+}
+
+* {
+    padding: auto;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+
+    margin: 0;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+    background: var(--gray-900);
+
+}
+
+
+
+header {
+    display: flex;
+
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+}
+
+.menu {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    transition: 0.4s;
+    z-index: 1;
+
+    background-color: var(--gray-900);
+
+    box-shadow: 0px 0px 8px 1px var(--blue-500);
+
+}
+
+
+
+.menu:hover {
+    box-shadow: 0px 0px 15px 1px #f9f9f9;
+
+    opacity: 1;
+
+
+
+}
+
+#Logo {
+
+
+    width: 300px;
+    height: 280px;
+    padding: 0;
+    margin-left: 100px;
+    -ms-perspective-origin-x: 100px;
+
+
+}
+
+.menu>ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+
+
+    margin: 0;
+    padding: 0;
+    width: 80%;
+
+}
+
+
+
+.menu li {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    position: relative;
+
+    padding: 40px;
+    width: 100%;
+
+}
+
+
+
+
+.menu li a {
+
+    text-decoration: none;
+    position: relative;
+
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    transition: 0.3s;
+
+    color: var(--blue-500);
+
+
+
+
+}
+
+.menu li a:hover {
+
+    color: #f9f9f9;
+
+}
+
+/* <------ MODFICA MENU QUANDO À FUNÇÃO "SCROLL" É ATIVADA------> */
+
+.modMenu {
+
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    transition: 0.4s;
+    background-color: var(--gray-800);
+    box-shadow: 0px 0px 8px 1px #f9f9f9;
+
+}
+
+.modMenu:hover {
+
+    opacity: 1;
+    box-shadow: 0px 0px 15px 1px var(--blue-500);
+
+}
+
+.modMenu ul {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+
+}
+
+.modMenu li {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    cursor: pointer;
+
+    padding: 40px;
+    width: 100%;
+
+}
+
+.modMenu li a {
+
+    text-decoration: none;
+    color: #f9f9f9;
+    position: relative;
+
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    transition: 0.3s;
+    opacity: 0.8;
+
+
+}
+
+.modMenu li a:hover {
+
+    color: var(--blue-300);
+
+}
+
+
+/* <---------------------------------------------------------------------------------> */
+
+/* -----------COMPONENTES PADRÃO DA MAIN--------------- */
+main {
+
+    display: grid;
+
+
+
+    margin: 140px;
+    width: 80%;
+
+
+
+    padding: 0;
+
+    background: var(--gray-800);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom: 2px solid var(--gray-600);
+
+}
+
+section {
+
+    height: 750px;
+    padding: 0;
+
+    border-bottom: 2px solid var(--gray-600);
+
+
+}
+
+
+/* <------------------------------------------------------------------> */
+
+/* <-------------COMPONENTES DA HOME-----------------> */
+.home {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+
+}
+
+.myImage {
+
+    justify-content: right;
+    align-items: right;
+    display: flex;
+    background: var(--blue-500);
+
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+
+border-top: var(--gray-700) solid 10px;
+border-left: var(--gray-900) 10px solid;
+border-bottom: var(--gray-800) 4px solid;
+border-right: var(--gray-900) 4px solid;
+
+    margin-right: 0px;
+
+    padding: 0;
+    width: 40%;
+    height: 56%;
+
+
+}
+
+.myImage img {
+    position: relative;
+
+    padding: 0px;
+    width: 380px;
+    height: 380px;
+
+    border: var(--gray-800) solid 10px;
+    border-left: var(--gray-900) 10px solid;
+    border-bottom: var(--gray-900) 10px solid;
+    
+
+
+}
+
+.infos {
+
+    color: var(--gray-100);
+
+    margin-left: 90px;
+    padding: 0px;
+    width: 50%;
+
+}
+
+.infos h1 {
+
+    justify-content: center;
+    background: var(--blue-500);
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 50px;
+    border-top: var(--gray-700) 10px solid;
+    border-left: var(--gray-900) 10px solid;
+    border-bottom: var(--gray-900) 2px solid;
+
+
+}
+
+.infos h3 {
+
+    justify-content: center;
+    background: var(--blue-500);
+    opacity: 0.8;
+    width: 50%;
+    border-radius: 8px;
+    font-size: 30px;
+    margin: 10px;
+    padding: 10px;
+    border-top: var(--gray-700) 10px solid;
+    border-left: var(--gray-900) 10px solid;
+    border-bottom: var(--gray-900) 2px solid;
+
+
+
+}
+
+
+
+
+
+
+
+.infos p {
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px;
+    font-size: 30px;
+
+}
+
+
+.infos p a:hover {
+
+    color: var(--blue-500);
+
+}
+
+.infos>p>a {
+
+    color: #f9f9f9;
+    text-decoration: none;
+
+}
+
+
+.iconsInfo {
+
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    list-style: none;
+    cursor: pointer;
+
+
+    padding: 0;
+    width: 100%;
+
+}
+
+
+.infos li a {
+
+
+    text-decoration: none;
+    color: #f9f9f9;
+
+    margin: 0;
+    padding: 20px;
+    font-size: 20px;
+    transition: 0.3s;
+    opacity: 0.8;
+
+
+
+}
+
+.infos li a:hover {
+
+    opacity: 1;
+    color: var(--blue-500);
+
+}
+/* <---------------------------------------------------------------> */
+
+
+.Skills ul {
+
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    list-style: none;
+    color: #fff;
+
+
+    padding: 0;
+    
+
+}
+
+.Skills li  {
+
+    text-decoration: none;
+
+    margin: 0;
+    padding: 20px;
+    font-size: 25px;
+    transition: 0.3s;
+  
+}
+
+
+/* <-------------------------------------------------------------> */
+footer {
+
+    color: #fff;
+    text-align: center;
+    flex-direction: flex-end;
+
+    padding: 0;
+    background-color: var(--gray-800);
+    box-shadow: 0px 0px 8px 1px var(--blue-500);
+    width: 100%;
+    z-index: -1;
+
+}
