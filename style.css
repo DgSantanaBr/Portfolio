@@ -265,40 +265,35 @@ section {
 
 .myImage {
 
-    justify-content: right;
-    align-items: right;
+    justify-content: center;
+    align-items: center;
     display: flex;
-    background: var(--blue-500);
+    background: var(--gray-800);
+    border-radius: 100% ;
+    box-shadow: 0px 0px 8px 6px #f9f9f9;
+    border: var(--blue-300) solid 2px;
 
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
 
 
-border-top: var(--gray-700) solid 10px;
-border-left: var(--gray-900) 10px solid;
-border-bottom: var(--gray-800) 4px solid;
-border-right: var(--gray-900) 4px solid;
+   
 
-    margin-right: 0px;
-
-    padding: 0;
-    width: 40%;
-    height: 56%;
+    margin: 100px;
 
 
 }
 
 .myImage img {
     position: relative;
-
+background-color: var(--gray-800);
     padding: 0px;
-    width: 380px;
-    height: 380px;
+    width: 330px;
+    height: 330px;
+    border-radius: 100% ;
 
-    border: var(--gray-800) solid 10px;
+    /* border: var(--gray-800) solid 10px;
     border-left: var(--gray-900) 10px solid;
     border-bottom: var(--gray-900) 10px solid;
-    
+     */
 
 
 }
@@ -401,7 +396,7 @@ border-right: var(--gray-900) 4px solid;
     padding: 20px;
     font-size: 20px;
     transition: 0.3s;
-    opacity: 0.8;
+   
 
 
 
@@ -413,7 +408,38 @@ border-right: var(--gray-900) 4px solid;
     color: var(--blue-500);
 
 }
-/* <---------------------------------------------------------------> */
+/* <-----------------------------COMPONENTES- SOBRE----------------------------------> */
+
+.sobre {
+
+    padding: 0;
+    margin: 0;
+   display: flex;
+
+}
+
+.frontend{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--gray-900);
+    border-radius: 100% 90% 100% 90%;
+    box-shadow: 0px 0px 50px 6px #f9f9f9;
+    margin: 140px   ;
+height: 330px;
+width: 330px;
+}
+
+.frontend img{
+    box-shadow: 0px 0px 70px 8px var(--blue-500);
+    width: 330px;
+    height: 330px;
+    margin: var(--blue-500) solid 10px;
+    /* box-shadow: 0px 0px 8px 1px var(--blue-500); */
+    border-radius: 90% 120% 90% 120%;
+}
 
 
 .Skills ul {
