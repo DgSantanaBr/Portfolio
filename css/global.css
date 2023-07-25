@@ -98,6 +98,27 @@
   .mb-xl {
     margin-bottom: 6rem;
   }
+
+  .fa-brands{
+    color: var(--primary-color);
+    background-clip: text;
+  }
+
+
+  
+  .fa-brands.fa-linkedin:hover {
+ color: #007bb5;
+  }
+  
+  .bgInsta:hover{ 	
+  background: -webkit-linear-gradient(45deg, #f7ce02, #f96302, #f71102, #d32155, #b43890, #904eca, #8944bb, #7832ae); 
+background-clip: text;
+    -webkit-background-clip: text; 	-webkit-text-fill-color: transparent; }
+  
+  .fa-github:hover {
+    color: rgb(48, 48, 48)
+    ;
+  }
   
   @media only screen and (max-width: 1024px) {
     html {
