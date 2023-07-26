@@ -5,6 +5,7 @@
   width: 100%;
   z-index: 10;
   background-color: var(--white);
+  transition: 0.4s;
 }
 .contentImg {
   padding: 0;
@@ -50,6 +51,7 @@
 
 .navbar.active {
   box-shadow: 0 0.2rem 0.9rem var(--secondary-color);
+  background-color: var(--gray);
 }
 
 .navbar .navbar__content .navbar__mobile,
