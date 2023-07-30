@@ -9,13 +9,15 @@
   <!-- title -->
   <title>Diego Santana Portfólio</title>
   <!-- CSS -->
-  <link rel="stylesheet" href="css/extensoes.css" />
+  <link rel="stylesheet" href="assets/css/extensoes.css" />
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
   <!-- Icones -->
   <script src="https://kit.fontawesome.com/58f10138e4.js" crossorigin="anonymous"></script>
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
 </head>
 
@@ -99,7 +101,8 @@
         até que a decisão da transição de carreira veio e após alguns anos atuando na área de educação fisica
         trabalhando com o treinamento físico, fortalecimento específico e reabilitação, o que me ajudou muito a
         desenvolver minhas soft skills.
-      <p> Eu resolvi ingressar na área de tecnologia que sempre me despertoucuriosidade e interesse, e por incentivo de alguns amigos que atuam na área tech, comecei a estudar sozinho através de conteúdos
+      <p> Eu resolvi ingressar na área de tecnologia que sempre me despertoucuriosidade e interesse, e por incentivo de
+        alguns amigos que atuam na área tech, comecei a estudar sozinho através de conteúdos
         gratuitos e descobri a programação, uma área que sou apaixonado e logo em seguida já comecei a comprar cursos da
         área e aplicar minhas novas skills e seguindo em constante evolução estudando e aprendendo.
       <p>
@@ -115,111 +118,64 @@
     <div class="skills__content max-width">
       <h2 class="tertiary-title">Habilidades.</h2>
       <p class="description">
-       Ferramentas e habilidades usadas por enquanto nos projetos, até a lista aumentar conforme meus estudos. 
+        Ferramentas e habilidades usadas por enquanto nos projetos, até a lista aumentar conforme meus estudos.
       </p>
       <ul>
         <li class="skills__item">
           <div class="image-container">
-            <a href="" target="_blank"> <i
-              class="fa-brands fa-html5 fa-2xl"></i></a>
+            <a href="" target="_blank"> <i class="fa-brands fa-html5 fa-2xl"></i></a>
           </div>
           <h3>HTML5</h3>
-          
+
         </li>
         <li class="skills__item">
           <div class="image-container">
-            <a href="" target="_blank"> <i
-              class="fa-brands fa-css3-alt fa-2xl"></i></a>
+            <a href="" target="_blank"> <i class="fa-brands fa-css3-alt fa-2xl"></i></a>
           </div>
           <h3>CSS</h3>
-         
+
         </li>
         <li class="skills__item">
           <div class="image-container">
-            <a href="" target="_blank"> <i
-              class="fa-brands fa-square-js fa-2xl"></i></a>
+            <a href="" target="_blank"> <i class="fa-brands fa-square-js fa-2xl"></i></a>
           </div>
           <h3>JavaScript</h3>
-        
+
         </li>
         <li class="skills__item">
           <div class="image-container">
             <img src="assets/image/files.png" alt="Gerenciamentos de versões" />
           </div>
           <h3>Gerenciamentos de versões (GIT, GitHub.)</h3>
-      
+
         </li>
       </ul>
     </div>
   </section>
 
   <!-- Projetos -->
-  <!-- <section id="projects" class="projects max-width">
-      <div class="projects__content">
-        <h2 class="secondary-title">Projetos em Destaque</h2>
-        <p>
-          De ideias abstratas a projetos bem-sucedidos, aqui estão alguns dos
-          meus trabalhos mais recentes
-        </p>
-      </div>
-      <ul>
-        <li>
-          <div class="image">
-            <img src="assets/task-manager.png" alt="Gerenciamento de tarefas" />
-          </div>
-          <div class="projects__info">
-            <h3 class="tertiary-title">
-              Sistema de gerenciamento de tarefas DEF
-            </h3>
-            <p>
-              Sistema web desenvolvido para a empresa DEF, com funcionalidades
-              como cadastro de tarefas, atribuição de responsáveis e
-              acompanhamento do status das atividades.
-            </p>
-            <a href="#">Leia mais &rarr;</a>
-          </div>
-        </li>
-        <li class="projects__reversed-list">
-          <div class="image">
-            <img src="assets/image/ecommerce.png" alt="ecommerce" />
-          </div>
-          <div class="projects__info">
-            <h3 class="tertiary-title">
-              Desenvolvimento de Loja Virtual MeuSofazim.com
-            </h3>
-            <p>
-              Site de e-commerce desenvolvido do zero com tecnologias como React
-              e Node.js, além de integração com diversos meios de pagamento e
-              entrega.
-            </p>
-            <a href="#">Leia mais &rarr;</a>
-          </div>
-        </li>
-        <li>
-          <div class="image">
-            <img src="assets/image/delivery.png" alt="delivery" />
-          </div>
-          <div class="projects__info">
-            <h3 class="tertiary-title">
-              App de delivery e Dashboard DeliveryJá!
-            </h3>
-            <p>
-              Aplicativo mobile desenvolvido para a empresa DeliveryJá!,
-              permitindo a realização de pedidos e acompanhamento em tempo real
-              do status da entrega.
-            </p>
-            <a href="#">Leia mais &rarr;</a>
-          </div>
-        </li>
-      </ul>
-    </section> -->
+  <section id="projects" class="projects max-width">
+    <div class="projects__content" id="projects__content">
+      <h2 class="secondary-title">Projetos e estudos</h2>
+
+      <p>
+        De projetos de estudo a projetos bem-sucedidos, aqui estão alguns dos
+        meus trabalhos mais recentes.
+      </p>
+      <h4>(em construção ...)</h4>
+    </div>
+    <div id="container-projetos" class="container-projetos">
+
+
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer id="footer">
     <div class="footer__content max-width mb-0">
       <h2 class="tertiary-title mb-s">Vamos conversar?</h2>
       <p class="mb-m">
-        Me conte  como podemos trabalhar juntos.
+        Me conte como podemos trabalhar juntos.
       </p>
       <div class="footer__contact mb-m">
         <span class="mb-m">diego_8d@hotmail.com</span>
@@ -228,11 +184,11 @@
       <ul class="mb-l">
         <li class="bgInsta">
           <a href="https://www.instagram.com/diiegosg/" target="_blank"> <i
-            class="fa-brands fa-instagram fa-2xl"></i></a>
+              class="fa-brands fa-instagram fa-2xl"></i></a>
         </li>
         <li>
           <a href="https://www.linkedin.com/in/diego-santanag/" target="_blank"><i
-            class="fa-brands fa-linkedin fa-2xl"></i></a>
+              class="fa-brands fa-linkedin fa-2xl"></i></a>
         </li>
         <li>
           <a href="https://github.com/DgSantanaBr" target="_blank"><i class="fa-brands fa-github fa-2xl "></i></a>
@@ -244,7 +200,15 @@
     </div>
   </footer>
   <!-- script -->
-  <script src="scripts/index.js"></script>
+  <script src="assets/scripts/index.js"></script>
+  <script src="assets/scripts/projetos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </body>
 
 </html>
+
+
+
+
+
+

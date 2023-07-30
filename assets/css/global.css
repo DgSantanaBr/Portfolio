@@ -102,22 +102,37 @@
   .fa-brands{
     color: var(--primary-color);
     background-clip: text;
+
   }
 
+  .fa-brands.fa-linkedin{
+    opacity: 30%;
+  }
 
   
   .fa-brands.fa-linkedin:hover {
  color: #007bb5;
+opacity: 100%;
+  }
+
+  .bgInsta{
+    opacity: 30%;
   }
   
   .bgInsta:hover{ 	
   background: -webkit-linear-gradient(45deg, #f7ce02, #f96302, #f71102, #d32155, #b43890, #904eca, #8944bb, #7832ae); 
 background-clip: text;
-    -webkit-background-clip: text; 	-webkit-text-fill-color: transparent; }
+    -webkit-background-clip: text; 	-webkit-text-fill-color: transparent; 
+  opacity: 100%;
+  }
+
+  .fa-github{
+    opacity: 30%;
+  }
   
   .fa-github:hover {
-    color: rgb(48, 48, 48)
-    ;
+    color: rgb(48, 48, 48);
+    opacity: 100%;
   }
   
   @media only screen and (max-width: 1024px) {
