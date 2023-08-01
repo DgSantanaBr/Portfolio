@@ -20,7 +20,7 @@ header .header__left p {
 header .header__right .header__image {
   position: relative;
   line-height: 0;
-  
+
 }
 
 header .header__right .header__image::after {

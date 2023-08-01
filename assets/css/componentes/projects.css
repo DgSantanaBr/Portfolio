@@ -1,94 +1,96 @@
 .projects {
   margin-bottom: 16rem;
   scroll-margin-top: 15rem;
-
+  display: flex;
 }
 
 .projects .projects__content {
-  max-width: 56rem;
+  max-width: 100%;
   text-align: center;
   margin: 0 auto 6rem;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .container-projetos {
-  display: flex;
-  padding: 0;
-  overflow-x: 0;
-  margin: 0;
-  max-width: 80%;
-  max-height: 60%;
-  padding: 15px;
+
+  position: relative;
+  padding: 40px;
+  max-width: 740px;
   margin: 0 auto;
-  overflow-x: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .projetos-wrapper {
-  position: relative;
-  box-sizing: border-box;
-  display: flex;
-  flex-flow: row nowrap;
-  gap: 15px;
+  overflow-x: auto;
 }
 
-.galeria-de-projetos {
-  border-radius: 20%;
-  background-color: blue;
-}
-.flecha{
-position: absolute;
-margin: 0;
-width: 100%;
-}
-.arrow-left-control {
-position: relative;
-
- 
+.arrow-left,
+.arrow-right {
+  position: absolute;
+  top: 0;
   left: 0;
   right: auto;
   bottom: 0;
   font-size: 20px;
   line-height: 250px;
-  width: 100%;
-  text-align: center;
+  width: 40px;
   color: var(--primary-color);
+  transition: all 600ms ease-in-out;
+  background: linear-gradient(to left, transparent 0%, var(--secondary-color) 200%);
+  opacity: 0.1;
   cursor: pointer;
   border: none;
-  background: linear-gradient(
-    to left, transparent 0%,var(--primary-color) 200% );
 }
 
-.arrow-right-control {
+.arrow-left:hover,
+.arrow-right:hover {
+  opacity: 1;
+}
 
-position: relative;
-  left: auto;
+.arrow-right {
   right: 0;
-  bottom: 0;
-  font-size: 20px;
-  line-height: 250px;
-  width: 100%;
-  text-align: center;
-  color: var(--primary-color);
-  cursor: pointer;
-  border: none;
-  background: linear-gradient(
-    to right, transparent 0%,var(--primary-color) 200% );
+  left: auto;
+  text-align: right;
+  background: linear-gradient(to right, transparent 0%, var(--secondary-color) 200%);
 }
 
+.galeria-de-projetos {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 2px;
+  justify-content: center;
+  align-items: center;
+}
 
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 350px;
+  flex-shrink: 0;
+  transition: all 600ms ease-in-out;
+  opacity: 0.5;
+  padding: 10px;
 
+}
 
-@media only screen and (max-width: 768px) {
+.current-item {
+  opacity: 1;
+}
 
-  .projects ul li,
-  .projects ul li.projects__reversed-list {
-    flex-direction: column;
-  }
+/* Escondendo a scrollbar no Chrome, Safari e Opera */
+.projetos-wrapper::-webkit-scrollbar {
+  display: none;
+}
 
-  .projects ul li .projects__info {
-    max-width: 66rem;
-  }
-
-  .projects ul li .image img {
-    min-width: auto;
-  }
+/* escondendo scrollbar para IE, Edge e Firefox */
+.projetos-wrapper {
+  -ms-overflow-style: none;
+  /* IE ae Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
