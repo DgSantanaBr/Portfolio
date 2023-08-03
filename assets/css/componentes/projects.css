@@ -16,10 +16,9 @@
 
   position: relative;
   padding: 40px;
-  max-width: 740px;
+  max-width: auto;
   margin: 0 auto;
-  justify-content: center;
-  align-items: center;
+
 }
 
 .projetos-wrapper {
@@ -60,8 +59,6 @@
   display: flex;
   flex-flow: row nowrap;
   gap: 2px;
-  justify-content: center;
-  align-items: center;
 }
 
 .item {
