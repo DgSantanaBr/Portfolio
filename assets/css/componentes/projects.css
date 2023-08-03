@@ -1,0 +1,93 @@
+.projects {
+  margin-bottom: 16rem;
+  scroll-margin-top: 15rem;
+  display: flex;
+}
+
+.projects .projects__content {
+  max-width: 100%;
+  text-align: center;
+  margin: 0 auto 6rem;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-projetos {
+
+  position: relative;
+  padding: 40px;
+  max-width: auto;
+  margin: 0 auto;
+
+}
+
+.projetos-wrapper {
+  overflow-x: auto;
+}
+
+.arrow-left,
+.arrow-right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: 0;
+  font-size: 20px;
+  line-height: 250px;
+  width: 40px;
+  color: var(--primary-color);
+  transition: all 600ms ease-in-out;
+  background: linear-gradient(to left, transparent 0%, var(--secondary-color) 200%);
+  opacity: 0.1;
+  cursor: pointer;
+  border: none;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+  opacity: 1;
+}
+
+.arrow-right {
+  right: 0;
+  left: auto;
+  text-align: right;
+  background: linear-gradient(to right, transparent 0%, var(--secondary-color) 200%);
+}
+
+.galeria-de-projetos {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 2px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 350px;
+  flex-shrink: 0;
+  transition: all 600ms ease-in-out;
+  opacity: 0.5;
+  padding: 10px;
+
+}
+
+.current-item {
+  opacity: 1;
+}
+
+/* Escondendo a scrollbar no Chrome, Safari e Opera */
+.projetos-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* escondendo scrollbar para IE, Edge e Firefox */
+.projetos-wrapper {
+  -ms-overflow-style: none;
+  /* IE ae Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}

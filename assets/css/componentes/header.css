@@ -20,18 +20,20 @@ header .header__left p {
 header .header__right .header__image {
   position: relative;
   line-height: 0;
+
 }
 
 header .header__right .header__image::after {
   content: '';
   display: block;
-  width: 100%;
+  width: 60%;
   height: 100%;
   border: 1px solid var(--primary-color);
   position: absolute;
   top: -1.5rem;
-  right: -1.5rem;
-  border-radius: 0.5rem;
+  right: 12rem;
+  box-shadow: 0 0.2rem 0.9rem var(--secondary-color);
+  border-radius: 0.9rem;
   z-index: -1;
 }
 
@@ -39,12 +41,13 @@ header .header__right .header__image .diego {
   border-radius: 0.9rem;
   min-width: 25rem;
   max-width: 60%;
+  box-shadow: 0 0.2rem 0.9rem var(--secondary-color);
 }
 
 header .header__right .header__image .background {
   position: absolute;
   top: -4rem;
-  right: -2.5rem;
+  right: 10rem;
   z-index: -1;
 }
 
