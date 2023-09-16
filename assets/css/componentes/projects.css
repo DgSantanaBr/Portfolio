@@ -89,12 +89,13 @@
   padding: 10px;
   background: linear-gradient(to left, transparent 0%, var(--primary-color) 200%);
 }
+
 .imagem-projeto {
   width: 100%;
   height: 100%;
   padding: 10px;
   border-radius: 15px;
-  background-color: var( --tertiary-color);
+  background-color: var(--tertiary-color);
   box-shadow: 0 0.2rem 0.9rem var(--black);
 }
 
@@ -114,52 +115,55 @@
   scrollbar-width: none;
   /* Firefox */
 }
-summary{
-  margin:10px ;
+
+summary {
+  margin: 10px;
   list-style-type: circle;
- color: var(--secondary-color);
- cursor: pointer;
+  color: var(--secondary-color);
+  cursor: pointer;
 }
 
-summary:hover{
+summary:hover {
   color: blue;
 }
 
-details[open] summary{
-  
+details[open] summary {
+
   list-style-type: square;
   color: var(--white);
-  background:linear-gradient(to left, transparent 0%, var(--primary-color) 200%);
-  
+  background: linear-gradient(to left, transparent 0%, var(--primary-color) 200%);
+
 }
 
-.item >button{
-    margin: 20px;
-  }
-  .custom-btn {
-    width: 130px;
-    height: 40px;
-    color: #fff;
-    border-radius: 5px;
-    padding: 10px 25px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 500;
-    background: transparent;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-     7px 7px 20px 0px rgba(0,0,0,.1),
-     4px 4px 5px 0px rgba(0,0,0,.1);
-    outline: none;
-  }
+.item>button {
+  margin: 20px;
+}
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    7px 7px 20px 0px rgba(0, 0, 0, .1),
+    4px 4px 5px 0px rgba(0, 0, 0, .1);
+  outline: none;
+}
 
 .btProjeto {
-  background:var(--dark-secondary-color);
+  background: var(--dark-secondary-color);
   border: none;
   z-index: 1;
 }
+
 .btProjeto:after {
   position: absolute;
   content: "";
@@ -168,20 +172,23 @@ details[open] summary{
   top: 0;
   right: 0;
   z-index: -1;
-  background-color:var(--primary-color);
+  background-color: var(--primary-color);
   border-radius: 5px;
-   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    7px 7px 20px 0px rgba(0, 0, 0, .1),
+    4px 4px 5px 0px rgba(0, 0, 0, .1);
   transition: all 0.3s ease;
 }
+
 .btProjeto:hover {
   color: #fff;
 }
+
 .btProjeto:hover:after {
   left: 0;
   width: 100%;
 }
+
 .btProjeto:active {
   top: 2px;
 }

@@ -56,7 +56,7 @@ function exibirProjetos(listaDeProjetos) {
   const controls = document.querySelectorAll(".control");
   let currentItem = 0;
   const items = document.querySelectorAll(".item");
- 
+
   const maxItems = items.length;
   items.forEach((item) => item.classList.remove("current-item"));
 

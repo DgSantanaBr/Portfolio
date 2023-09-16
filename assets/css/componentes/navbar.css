@@ -7,6 +7,7 @@
   background-color: var(--white);
   transition: 0.4s;
 }
+
 .contentImg {
   padding: 0;
   margin-top: 0;
@@ -18,13 +19,15 @@
   height: 90px;
   border-radius: 50%;
 }
-.contentImg a img{
+
+.contentImg a img {
   padding: 0;
   margin-right: 0;
   width: 120px;
   height: 110px;
   border-radius: 50%;
 }
+
 .navbar .navbar__content {
   padding: 2rem 4rem 1rem;
   display: flex;

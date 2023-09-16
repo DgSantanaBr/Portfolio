@@ -21,7 +21,7 @@
 
 .skills .skills__content ul li .image-container {
   background-color: var(--white);
-  padding:0;
+  padding: 0;
   border-radius: 50%;
   width: 7rem;
   height: 7rem;
@@ -33,7 +33,7 @@
 }
 
 .skills .skills__content ul li h3 {
-  font-size:  1.6rem;
+  font-size: 1.6rem;
   font-weight: 500;
   margin: 2rem 0 1rem;
   color: var(--black);
@@ -41,20 +41,21 @@
   justify-content: center;
   font-style: oblique;
 }
- 
-.fa-css3-alt{
+
+.fa-css3-alt {
   color: #4169e1;
   font-size: 50px;
   justify-content: center;
   align-items: center;
-  
+
 }
-.fa-html5{
+
+.fa-html5 {
   color: #FF5D0D;
   font-size: 50px;
 }
 
-.fa-square-js{
+.fa-square-js {
   color: yellow;
   font-size: 50px;
 }

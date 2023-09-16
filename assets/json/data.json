@@ -3,38 +3,30 @@
         "nome": "Fokus - Pomodoro APP",
         "SaibaMais": "https://dgsantanabr.github.io/PomodoroApp/",
         "imagem": "./assets/image/imagensProjeto/Fokus.png",
-        "descricao":"Site para gerenciar a técnica de pomodoro, para focar em suas atividades e otimizar a produtividade no dia a dia."
-    
+        "descricao": "Site para gerenciar a técnica de pomodoro, para focar em suas atividades e otimizar a produtividade no dia a dia."
     },
     {
         "nome": "Número Secreto - Game",
         "SaibaMais": "https://numero-secreto-two-flame.vercel.app/",
         "imagem": "./assets/image/imagensProjeto/NúmeroSecreto.png",
-        "descricao":"Jogo que onde por comando de voz utilizando Web Speech API, o usuário deve adivinhar o número secreto proposto pelo jogo."
+        "descricao": "Jogo que onde por comando de voz utilizando Web Speech API, o usuário deve adivinhar o número secreto proposto pelo jogo."
     },
     {
         "nome": "FrontEnd Mentor Challenge",
         "SaibaMais": "https://fylo-data-storage-component-sooty-ten.vercel.app/",
         "imagem": "./assets/image/imagensProjeto/FrontendMentor _ Fylo.png",
-        "descricao":"Desafio proposto pela FrontEnd Mentor, que é uma plataforma online que oferece uma variedade de desafios de programação para desenvolvedores frontend."
+        "descricao": "Desafio proposto pela FrontEnd Mentor, que é uma plataforma online que oferece uma variedade de desafios de programação para desenvolvedores frontend."
     },
-
     {
         "nome": "FrontEnd Mentor Challenge",
         "SaibaMais": "https://order-summary-component-woad-three.vercel.app/",
         "imagem": "./assets/image/imagensProjeto/FrontendMentor _ Order.png",
-        "descricao":"Desafio proposto pela FrontEnd Mentor, que é uma plataforma online que oferece uma variedade de desafios de programação para desenvolvedores frontend."
+        "descricao": "Desafio proposto pela FrontEnd Mentor, que é uma plataforma online que oferece uma variedade de desafios de programação para desenvolvedores frontend."
     },
     {
         "nome": "FrontEnd Mentor Challenge",
         "SaibaMais": "https://card-components-eight.vercel.app/",
         "imagem": "./assets/image/imagensProjeto/YourRepositories.png",
-        "descricao":"Desafio proposto pela FrontEnd Mentor, que é uma plataforma online que oferece uma variedade de desafios de programação para desenvolvedores frontend."
+        "descricao": "Desafio proposto pela FrontEnd Mentor, que é uma plataforma online que oferece uma variedade de desafios de programação para desenvolvedores frontend."
     }
-
-
-
-
-
-
 ]
