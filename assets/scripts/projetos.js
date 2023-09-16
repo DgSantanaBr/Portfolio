@@ -1,7 +1,7 @@
 // Requisição  JSON //
 let projetos = []
 
-const endPointApi = '/assets/json/data.json'
+const endPointApi = './assets/json/data.json'
 
 getBuscarProjetoDaAPI()
 
@@ -36,12 +36,19 @@ function exibirProjetos(listaDeProjetos) {
     elementoInsereProjeto.innerHTML +=
       `
    <div class= "item current-item">
-        <img src="${projetos.imagem}" class="imagem-projeto" alt="Imagem-projeto"/>
+        <img src="${projetos.imagem}" class="imagem-projeto current-imagem" alt="Imagem-projeto"/>
         <h2>${projetos.nome}</h2>
-        <button>
-        <a href="${projetos.SaibaMais}" target="_blank" alt="Link-projeto" > Visite o projeto</a>
+        
+        <details class ="descricaoPorjeto">
+          <summary>Detalhes</summary>
+          <p>${projetos.descricao}</p>
+        </details>
+
+        <button class ="btProjeto custom-btn">
+          <a href="${projetos.SaibaMais}" target="_blank" alt="Link-projeto" > Visitar</a>
         </button>    
-    </div>
+    
+</div>
   `
   });
 
@@ -49,7 +56,9 @@ function exibirProjetos(listaDeProjetos) {
   const controls = document.querySelectorAll(".control");
   let currentItem = 0;
   const items = document.querySelectorAll(".item");
+ 
   const maxItems = items.length;
+  items.forEach((item) => item.classList.remove("current-item"));
 
   controls.forEach((control) => {
     control.addEventListener("click", () => {
@@ -72,15 +81,17 @@ function exibirProjetos(listaDeProjetos) {
       // Remove o destaque de todos os projetos//
       items.forEach((item) => item.classList.remove("current-item"));
 
- 
       items[currentItem].scrollIntoView({
         inline: "center",
         behavior: "smooth",
         block: "nearest"
 
       });
+
       //Destaca o projeto//
       items[currentItem].classList.add("current-item");
+
+
     });
   });
 
